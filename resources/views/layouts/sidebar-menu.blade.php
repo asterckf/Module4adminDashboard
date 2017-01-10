@@ -4,17 +4,17 @@
   <div class="menu_section">
     <ul class="nav side-menu">
       <li><a><i class="fa fa-home"></i> Home </a></li>
-      <li><a><i class="fa fa-edit"></i> Accounting <span class="fa fa-chevron-down"></span></a>
+      <li><a><i class="fa fa-edit"></i> User Management <span class="fa fa-chevron-down"></span></a>
       <ul class="nav child_menu">
-        <li><a href="form.html">Account</a></li>
-        <li><a href="form_advanced.html">Company</a></li>
-        <li><a href="form_buttons.html">Fast Entry</a></li>
-        <li><a href="form_validation.html">Income</a></li>
-        <li><a href="form_wizards.html">Expense</a></li>
-        <li><a href="form_upload.html">Account Transfer</a></li>
+        <li><a href="form.html">Accountant</a></li>
+        <li><a href="form_advanced.html">Accountant's Delegate</a></li>
+        <li><a href="form_buttons.html">Auditor</a></li>
+        <li><a href="form_validation.html">Auditor's Delegate</a></li>
+        <li><a href="form_wizards.html">Company's Director</a></li>
+        <li><a href="form_upload.html">Company's Delegate</a></li>
       </ul>
     </li>
-    <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+    <li><a><i class="fa fa-desktop"></i> System Status <span class="fa fa-chevron-down"></span></a>
     <ul class="nav child_menu">
       <li><a href="general_elements.html">General Elements</a></li>
       <li><a href="media_gallery.html">Media Gallery</a></li>
