@@ -27,5 +27,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function roles(){
+
+        return $this->belongsTo("App\Role");
+    }
 
 }

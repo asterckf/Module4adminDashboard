@@ -12,18 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('master');
+    return view('index');
 });
 
-//Route::group(['middleware'=>['web']],function(){
-//    Route::resource('admin_details','adminDetailController');
-//
+//Route::get('/', function () {
+//    return view('master');
 //});
-
-Route::get('/home', array('as' => 'home', 'uses' => 'sidebar@home'));
-
-Route::get('/companyAudit', array('as' => 'companyAudit', 'uses' => 'sidebar@companyAudit'));
-
-Route::get('/balanceSheet', array('as' => 'balanceSheet', 'uses' => 'sidebar@balanceSheet'));
-
-Route::get('/logOut', array('as' => 'logOut', 'uses' => 'sidebar@logOut'));
+//
+////Route::group(['middleware'=>['web']],function(){
+////    Route::resource('admin_details','adminDetailController');
+////
+////});
+//
+//Route::get('/home', array('as' => 'home', 'uses' => 'sidebar@home'));
+//
+//Route::get('/companyAudit', array('as' => 'companyAudit', 'uses' => 'sidebar@companyAudit'));
+//
+//Route::get('/balanceSheet', array('as' => 'balanceSheet', 'uses' => 'sidebar@balanceSheet'));
+//
+//Route::get('/logOut', array('as' => 'logOut', 'uses' => 'sidebar@logOut'));
