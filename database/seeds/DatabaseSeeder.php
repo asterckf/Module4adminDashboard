@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call('RolesSeeder');
         $this->command->info("Roles table seeded");
+        $this->call('AdminDetailsSeeder');
     }
 }

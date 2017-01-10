@@ -11,9 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('master');
-});
+//Route::get('/', function () {
+//    return view('master');
+//});
+
+//Route::group(['middleware'=>['web']],function(){
+//    Route::resource('admin_details','adminDetailController');
+//
+//});
 
 Route::get('/home', array('as' => 'home', 'uses' => 'sidebar@home'));
 

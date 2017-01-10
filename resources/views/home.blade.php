@@ -13,6 +13,19 @@
       <div class="panel-body">
 
         <!-- panel content -->
+        {{--<table class="table">--}}
+          {{--<tr>--}}
+            {{--<td>Name</td>--}}
+            {{--<td>Email</td>--}}
+          {{--</tr>--}}
+          {{--loop to get data from database--}}
+          {{--@foreach ($admin_details as $admin_detail)--}}
+            {{--<tr>--}}
+              {{--<td>{{ $admin_detail->staffid }}</td>--}}
+              {{--<td>{{ $admin_detail->authornames }}</td>--}}
+            {{--</tr>--}}
+          {{--@endforeach--}}
+        {{--</table>--}}
 
       </div>
     </div>

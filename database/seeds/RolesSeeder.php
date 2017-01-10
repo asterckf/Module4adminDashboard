@@ -11,7 +11,7 @@ class RolesSeeder extends Seeder
      */
     public function run()
     {
-//        DB::table('roles')->delete();
+//      DB::table('roles')->delete();
         DB::table('roles')->insert(array(
             array('name'=>'Accountant','description'=>'Analyze and compile record of asset,
             liability and capital.Summarize balance, profit and loss statement'),
