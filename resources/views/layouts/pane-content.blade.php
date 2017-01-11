@@ -42,25 +42,26 @@
   <div class="x_content">
     <br>
     <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" role="form" action="update" method="post">
+    {{csrf_field()}}
 
         <div class="form-group">
             <label for="admin_id" class="control-label col-md-3 col-sm-3 col-xs-12">Admin ID</label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <input id="admin_id" class="form-control col-md-7 col-xs-12" type="text" name="id"  value="{{$admins['id']}}">
+                <input id="admin_id" class="form-control col-md-7 col-xs-12" type="text" name="id"  value="{{$admin->id}}">
             </div>
         </div>
 
         <div class="form-group">
             <label for="admin_name" class="control-label col-md-3 col-sm-3 col-xs-12">Admin Name</label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <input id="admin_name" class="form-control col-md-7 col-xs-12" type="text" name="name" value="{{$admins['name']}}">
+                <input id="admin_name" class="form-control col-md-7 col-xs-12" type="text" name="name" value="{{$admin->name}}">
             </div>
         </div>
 
         <div class="form-group">
             <label for="admin_email" class="control-label col-md-3 col-sm-3 col-xs-12">Email</label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <input id="admin_email" class="form-control col-md-7 col-xs-12" type="text" name="email" value="{{$admins['email']}}">
+                <input id="admin_email" class="form-control col-md-7 col-xs-12" type="text" name="email" value="{{$admin->email}}">
             </div>
         </div>
 

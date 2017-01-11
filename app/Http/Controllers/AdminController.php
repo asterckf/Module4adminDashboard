@@ -45,10 +45,12 @@ class AdminController extends Controller
 //     * @param  int  $id
 //     * @return \Illuminate\Http\Response
 //     */
-//    public function show($id)
-//    {
-//        //
-//    }
+    public function show()
+    {
+        $admin = Admin::first();
+//        return $admin;
+        return view ('index',compact('admin'));
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -58,9 +60,8 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        $admin= Admin::find($id);
-//        return $id;
-        return view('index',['admins'=> $admin]);
+        $admin= Admin::first();
+        return view ('layouts.pane-content',compact('admin'));
     }
 
     /**
@@ -72,9 +73,9 @@ class AdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-
+        dd($request);
         //save data in database
-        $admin = Admin::find($id);
+        $admin = Admin::first();
         $admin ->name = $request -> name;
         $admin->email = $request -> email;
         $admin->save();
