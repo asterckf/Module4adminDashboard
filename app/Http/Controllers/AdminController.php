@@ -48,7 +48,6 @@ class AdminController extends Controller
     public function show()
     {
         $admin = Admin::first();
-//        return $admin;
         return view ('index',compact('admin'));
     }
 

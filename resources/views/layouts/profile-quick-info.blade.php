@@ -4,6 +4,6 @@
 	</div>
 	<div class="profile_info">
 		<span>Welcome,</span>
-		<h2>System Administrator</h2>
+		<h2>System Admin</h2>
 	</div>
 </div>

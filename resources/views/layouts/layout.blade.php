@@ -14,6 +14,7 @@
         <!-- Custom Theme Style -->
         <link href="build/css/custom.min.css" rel="stylesheet">
     </head>
+
     <body class="nav-md">
         <div class="container body">
             <div class="main_container">
@@ -34,8 +35,7 @@
                 <script src="vendors/fastclick/lib/fastclick.js"></script>
                 <!-- NProgress -->
                 <script src="vendors/nprogress/nprogress.js"></script>
-                
                 <!-- Custom Theme Scripts -->
                 <script src="build/js/custom.min.js"></script>
-            </body>
-        </html>
+    </body>
+</html>
