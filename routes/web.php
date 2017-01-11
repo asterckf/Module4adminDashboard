@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/','AdminController@show' );
+Route::get('/','AdminController@show');
 Route::get('edit&{id}','AdminController@edit');
 Route::post('update','AdminController@update');
+
+Route::get('user','UserController@index');

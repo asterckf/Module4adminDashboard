@@ -3,7 +3,7 @@
     <!-- menu profile quick info -->
     @include('layouts.profile-quick-info')
     <!-- menu profile quick info -->
-    <br />
+    <br/>
     <!-- sidebar menu -->
     @include('layouts.sidebar-menu')
     <!-- sidebar menu -->
