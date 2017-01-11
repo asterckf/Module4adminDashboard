@@ -11,8 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call('RolesSeeder');
-        $this->call('AdminsSeeder');
+        Eloquent::unguard();
+
+/*        //call class and run seed*/
+        $this->call('AdminDashboardSeeder');
         $this->command->info("Tables seeded");
     }
 }
