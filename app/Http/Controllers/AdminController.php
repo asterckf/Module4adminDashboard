@@ -70,16 +70,16 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        dd($request);
+//        dd($request);
         //save data in database
         $admin = Admin::first();
         $admin ->name = $request -> name;
         $admin->email = $request -> email;
         $admin->save();
 
-        return redirect('index');
+        return redirect('/')->with('message', 'UPDATE SUCCEED !');
     }
 //
 //    /**

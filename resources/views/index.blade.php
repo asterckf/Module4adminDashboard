@@ -16,6 +16,7 @@
     @include('layouts.top-navigation')
     <!-- top navigation -->
     <!-- page content -->
+
     @include('layouts.pane-content')
     <!-- page content -->
     <!-- footer content -->
