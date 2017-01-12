@@ -12,7 +12,17 @@
 */
 
 Route::get('/','AdminController@show');
+
 Route::get('edit&{id}','AdminController@edit');
+
 Route::post('update','AdminController@update');
 
 Route::get('user','UserController@index');
+
+// controller to noOfUser view
+Route::get('/noOfUser', array('as' => 'noOfUserController', 'uses' => 'noOfUserController@show'));
+
+//controller to system status view
+Route::group(['middleware' => 'web'], function() {
+   Route::get('/status', 'StatusController@show');
+});
